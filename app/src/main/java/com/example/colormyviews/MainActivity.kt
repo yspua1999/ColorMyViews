@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun makeColored(view: View) {
         when(view.id){
-            R.id.box_one_text -> view.setBackgroundColor(Color.DKGRAY)
-            R.id.box_two_text -> view.setBackgroundColor(Color.GRAY)
-            R.id.box_three_text -> view.setBackgroundColor(Color.BLUE)
-            R.id.box_four_text -> view.setBackgroundColor(Color.MAGENTA)
-            R.id.box_five_text -> view.setBackgroundColor(Color.BLUE)
-            else -> view.setBackgroundColor(Color.LTGRAY)
+            R.id.box_one_text -> view.setBackgroundResource(R.drawable.blue_image)
+            R.id.box_two_text -> view.setBackgroundResource(R.drawable.water_image)
+            R.id.box_three_text -> view.setBackgroundResource(R.drawable.water_image2)
+            R.id.box_four_text -> view.setBackgroundResource(R.drawable.orange_image)
+            R.id.box_five_text -> view.setBackgroundResource(R.drawable.rain_image)
+            else -> view.setBackgroundResource(R.drawable.mountain_image)
 
         }
     }
