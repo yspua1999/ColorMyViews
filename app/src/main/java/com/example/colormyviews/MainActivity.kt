@@ -4,6 +4,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -20,10 +21,17 @@ class MainActivity : AppCompatActivity() {
         when(view.id){
             R.id.box_one_text -> view.setBackgroundResource(R.drawable.blue_image)
             R.id.box_two_text -> view.setBackgroundResource(R.drawable.water_image)
+           /*
             R.id.box_three_text -> view.setBackgroundResource(R.drawable.water_image2)
             R.id.box_four_text -> view.setBackgroundResource(R.drawable.orange_image)
             R.id.box_five_text -> view.setBackgroundResource(R.drawable.rain_image)
-            else -> view.setBackgroundResource(R.drawable.mountain_image)
+            else ->  view.setBackgroundResource(R.drawable.mountain_image)
+           */
+            //for buttons (using custom color for background)
+            R.id.red_button -> box_three_text.setBackgroundResource(R.color.my_red)
+            R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
+            R.id.green_button -> box_five_text.setBackgroundResource(R.color.my_green)
+            else -> view.setBackgroundColor(Color.LTGRAY)
 
         }
     }
@@ -38,6 +46,10 @@ class MainActivity : AppCompatActivity() {
 
         val rootConstraintLayout = findViewById<View>(R.id.constraint_layout)
 
+        val redButton = findViewById<Button>(R.id.red_button)
+        val greenButton = findViewById<Button>(R.id.green_button)
+        val yellowButton = findViewById<Button>(R.id.yellow_button)
+
         val clickableViews: List<View> =
             listOf(
                 boxOneText,
@@ -45,7 +57,10 @@ class MainActivity : AppCompatActivity() {
                 boxThreeText,
                 boxFourText,
                 boxFiveText,
-                rootConstraintLayout
+                rootConstraintLayout,
+                redButton,
+                greenButton,
+                yellowButton
             )
 
         for (item in clickableViews) {
