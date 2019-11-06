@@ -6,8 +6,17 @@
     <string name="box_four">Box Four</string>
     <string name="box_five">Box Five</string>
     <string name="how_to_play">How to play:</string>
-    <string name="tap_the_boxes_and_buttons">Tap the screen and buttons.</string>
+    <string name="tap_the_boxes_and_buttons">Tap the screen.</string>
     <string name="button_red">RED</string>
     <string name="button_yellow">YELLOW</string>
     <string name="button_green">GREEN</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
 </resources>
